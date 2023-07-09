@@ -24,3 +24,15 @@ class Car(Vehicle):                                                         #to 
 
 c1 = Car("red", 250, 6, "No")
 c1.printCar()
+
+#---------------------------------------------
+
+class Circle(object):                                                       # same as "class Circle:"
+    def __init__(self,radius):
+        self.radius = radius
+
+    def __str__(self) -> str:
+        return "This is a Circle Class which takes radius as an argument"
+    
+c = Circle(3)
+print(c)
